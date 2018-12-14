@@ -1,0 +1,9 @@
+{{#if error}}
+<div class="alert alert-primary">{{error}}</div>{{/if}}
+
+{{!-- loop do handlebars --}}
+{{#each errors}}
+<div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}

@@ -1,0 +1,22 @@
+{{!-- loop do handlebars --}}
+{{#each errors}}
+<div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}
+
+<div class="card card-body">
+  <h3>Editar Ideia</h3>
+  <form action="/ideias/{{ideia.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="titulo">Título</label>
+      <input type="text" class='form-control' name="title" value={{ideia.title}}>
+    </div>
+    <div class="form-group">
+      <label for="details">Detalhes</label>
+      <textarea class='form-control' name="details">{{ideia.details}}</textarea>
+    </div>
+    <input type="submit" class='btn btn-dark' value="Editar">
+  </form>
+</div>
