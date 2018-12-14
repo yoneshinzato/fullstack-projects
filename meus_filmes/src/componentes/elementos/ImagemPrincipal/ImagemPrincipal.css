@@ -1,0 +1,56 @@
+.imagem-principal {
+  background-size: 100%, cover !important;
+  background-position: center, center !important;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.imagem-principal-conteudo {
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.imagem-principal-texto {
+  z-index: 100;
+  max-width: 700px;
+  position: absolute;
+  bottom: 40px;
+  margin-right: 20px;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.imagem-principal-texto h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.imagem-principal-texto p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .imagem-principal-texto {
+    max-width: 100%;
+  }
+
+  .imagem-principal-texto h1 {
+    font-size: 38px;
+    color: #fff;
+  }
+
+  .imagem-principal-texto p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+}

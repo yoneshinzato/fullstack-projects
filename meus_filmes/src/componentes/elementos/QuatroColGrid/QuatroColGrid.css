@@ -1,0 +1,36 @@
+.grid h1 {
+  font-size: 42px;
+  margin: 20px;
+}
+
+.conteudo-grid {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.elemento-grid {
+  margin: 0 40px 40px 0;
+  background: #41295a99;
+  max-height: 430px;
+  overflow: hidden;
+}
+
+/* grid de 4 colunas */
+.elemento-grid:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .conteudo-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .elemento-grid:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  .grid h1 {
+    font-size: 22px;
+  }
+}

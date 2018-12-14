@@ -1,0 +1,49 @@
+.barra-de-busca {
+  width: 100%;
+  height: 105px;
+  background: #41295a;
+  position: relative;
+  padding: 25px 20px 0px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.barra-de-busca-conteudo {
+  max-width: 1280px;
+  width: 100%;
+  height: 55px;
+  background: #2f0743;
+  margin: 0 auto;
+  border-radius: 40px;
+  position: relative;
+  color: #fff;
+}
+
+.fa-busca {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: #fff;
+}
+
+.barra-de-busca-input {
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  top: 7px;
+  border: 0;
+  background: transparent;
+  height: 40px;
+  color: #fff;
+}
+
+.barra-de-busca-input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 720px) {
+  .barra-de-busca-input {
+    font-size: 28px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,28 @@
+.ator {
+  box-sizing: border-box;
+}
+
+.ator img {
+  width: 40%;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+}
+
+.ator-nome {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  margin: 10px 20px;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.ator-personagem {
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  margin: 0 20px 10px 20px;
+  width: 40%;
+  box-sizing: border-box;
+}
